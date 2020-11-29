@@ -51,7 +51,7 @@ template<class T> void dprint(T s){
 // 気持ち
 // フォロー数 <= フォロワー数 * 2 + 100 より
 // B + ans = A * 2 + 100
-// ans = max(A * 2 - B + 100, 0) (制約よりA-Bで十分ではある)
+// ans = max(A * 2 - B + 100, 0) (制約よりmaxなしで十分ではある)
 
 void solve(){ 
     int A,B; cin >> A >> B;
