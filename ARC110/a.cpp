@@ -51,6 +51,9 @@ template<class T> void dprint(T s){
 // 素因数分解でいけるはず
 // N = 30 で およそ 2.3 * 1e12 
 
+// AC 後 解説を見た
+// 最小公倍数なのだから lcm を繋げば早かった
+
 void solve(){ 
     ll N; cin >> N;
     map<ll,ll> mp;
@@ -69,7 +72,6 @@ void solve(){
             }
             chmax(mp[i],semp);
         }
-
     }
     ll ans = 1LL;
     for(auto x:v){
@@ -77,7 +79,6 @@ void solve(){
     }
     ans += 1;
     cout << ans << '\n';
-
 }
 int main(int argc, char *argv[]){
   if(argc>1 && argv[1][0]=='D'){ DEBUG = 1;}
